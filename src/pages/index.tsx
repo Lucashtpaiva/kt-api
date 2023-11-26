@@ -1,5 +1,6 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import Head from "next/head";
+import UserList from "../../components/UserList";
 
 export default function Home() {
   return (
@@ -8,9 +9,14 @@ export default function Home() {
         <title>KT API</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box>
-        <Text>Teste</Text>
-      </Box>
+      <Container
+        minH={"100vh"}
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
+        <UserList />
+      </Container>
     </>
   );
 }

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint && prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "server": "json server -p 3000 -d 1000 server.json"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0",
@@ -18,7 +19,9 @@
     "framer-motion": "^10.16.5",
     "next": "14.0.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-hook-form": "^7.48.2",
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "@types/node": "^20",
