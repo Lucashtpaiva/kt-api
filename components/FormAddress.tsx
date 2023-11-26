@@ -1,7 +1,7 @@
 import { Flex, Input } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 
-export default function UserList() {
+export default function FormAddress() {
   const { register, setValue } = useForm();
 
   function onBlurCep(ev: any) {

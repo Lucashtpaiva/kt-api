@@ -1,6 +1,6 @@
 import { Container } from "@chakra-ui/react";
 import Head from "next/head";
-import UserList from "../../components/UserList";
+import FormAddress from "../../components/FormAddress";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <UserList />
+        <FormAddress />
       </Container>
     </>
   );
