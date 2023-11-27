@@ -1,12 +1,12 @@
 import { Container } from "@chakra-ui/react";
 import Head from "next/head";
-import FormAddress from "../../components/FormAddress";
+import UserList from "../../../components/UserList";
 
-export default function Home() {
+export default function Users() {
   return (
     <>
       <Head>
-        <title>KT API</title>
+        <title>KT Users</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container
@@ -15,7 +15,7 @@ export default function Home() {
         justifyContent={"center"}
         flexDirection={"column"}
       >
-        <FormAddress />
+        <UserList />
       </Container>
     </>
   );
