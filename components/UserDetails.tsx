@@ -8,16 +8,18 @@ type User = {
 
 export default function UserDetails() {
   const router = useRouter();
-  const { id } = router.query;
+
   const [data, setData] = useState<User>();
 
   useEffect(() => {
+    if (!router.isReady) return;
+    const { id } = router.query;
     fetch(`http://localhost:3333/users/${id}`).then((response) => {
       response.json().then((user) => {
         setData(user);
       });
     });
-  }, []);
+  }, [router.isReady]);
 
   return (
     <ul>
